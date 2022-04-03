@@ -1,11 +1,10 @@
-
 <div class="container mt-5">
   <div class="row" *ngIf="products">
     <div class="col-6 mb-3" *ngFor="let product of products; let i = index" >
       <div class="card h-100">
         <div class="card-body">
-          <h4 class="card-title">{{product.name}}</h4>
-          <p>{{product.price}}</p>
+          <h1 class="card-title">{{product.name}}</h1>
+          <h4>{{product.price | currency: 'EUR'}}</h4>
         </div>
       </div>
     </div>
@@ -26,9 +25,9 @@
           </div>
 
           <div class="form-group">
-            <label for="alterEgo">Alter Ego</label>
-            <input id="alterEgo" required name="alterEgo" ngModel class="form-control" type="text" #alterEgo="ngModel">
-            <div *ngIf="alterEgo.invalid && alterEgo.touched" class="alert alert-danger mt-1" role="alert">
+            <label for="indirizzo">Indirizzo</label>
+            <input id="indirizzo" required name="indirizzo" ngModel class="form-control" type="text" #indirizzo="ngModel">
+            <div *ngIf="indirizzo.invalid && indirizzo.touched" class="alert alert-danger mt-1" role="alert">
               Campo obbligatorio
             </div>
           </div>

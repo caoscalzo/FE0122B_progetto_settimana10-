@@ -2,9 +2,9 @@
   <div class="row" *ngIf="product; else loading">
       <div class="card h-100">
         <div class="card-body">
-          <h5 class="card-title">{{product.name}}</h5>
-          <p>{{product.description}}</p>
-          <p>{{product.price}}</p>
+          <h1 class="card-title">{{product.name }}</h1>
+          <h4>{{product.description}}</h4>
+          <p class="prezzo">{{product.price | currency: 'EUR'}}</p>
           <button (click)="aggiungi(product)">Aggiungi al carrello</button>
         </div>
       </div>

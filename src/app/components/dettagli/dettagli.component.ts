@@ -27,5 +27,6 @@ export class DettagliComponent implements OnInit {
   aggiungi(prodotto:Products){
      this.service.contatore()
      this.service.aggiungiAlCarrello(prodotto)
+     alert('prodotto aggiunto al carrello')
   }
 }
