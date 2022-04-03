@@ -1,0 +1,28 @@
+{
+   "products":[
+     {
+       "id": 1,
+       "name": "Samsung Galaxy S22",
+       "price": 900,
+       "description":"Meglio de un'Iphone"
+     },
+     {
+      "id": 2,
+      "name": "OnePlus 10 pro",
+      "price": 990,
+      "description":"Grosso come una casa"
+    },
+    {
+      "id": 3,
+      "name": "Apple Iphone 13",
+      "price": 800,
+      "description":"Non per poveri"
+    },
+    {
+      "id": 4,
+      "name": "Nokia 6630",
+      "price": 50,
+      "description":"Ottimo per fissare chiodi al muro"
+    }
+   ]
+}
